@@ -1,0 +1,602 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.clr{
+    clear: both;
+}
+/* ===========================================================
+                        Common css end
+============================================================*/
+
+/* ===========================================================
+                        Main-menu part start
+============================================================*/
+#menu{
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo{
+    width: 15%;
+    float: left;
+    line-height: 91px;
+}
+
+.main_menu{
+    width: 85%;
+    float: left;
+}
+
+.main_menu ul{
+    float: right;
+}
+
+.main_menu ul li{
+    float: left;
+}
+
+.main_menu ul li a{
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'Gentium Book Basic', serif;
+    line-height: 91px;
+    margin-left: 51px;
+}
+/* ===========================================================
+                        Main-menu part end
+============================================================*/
+
+/* ===========================================================
+                        Banner part start
+============================================================*/
+#banner{
+    padding: 239px 0 142px;
+    position: relative;
+    z-index: 1;
+}
+
+#banner::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.banner_text{
+    width: 975px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner_text img{
+    padding-top: 34px;
+}
+
+.banner_text h1{
+    color: #fff;
+    font-size: 90px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+}
+
+.banner_text a{
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    margin-right: 25px;
+    text-transform: uppercase;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    margin-top: 34px;
+}
+
+.banner_text a:hover{
+    background: rgba(0, 0, 0, 0.6);
+    border-color: rgba(0, 0, 0, 0.6);
+}
+/* ===========================================================
+                        Banner part end
+============================================================*/
+
+/* ===========================================================
+                        Service part start
+============================================================*/
+#service{
+    padding: 55px 0 30px;
+    background: url(../images/ser-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.ser_col{
+    width: 50%;
+    float: left;
+    padding-left: 120px;
+}
+
+.ser_text{
+    width: 430px;
+    text-align: center;
+}
+
+.ser_col .ser_text h2{
+    color: #cc9900;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+    padding-top: 24px;
+}
+
+.ser_col .ser_text img{
+    color: #cc9900;
+    padding-top: 12px;
+}
+
+.ser_col .ser_text p{
+    color: #4c4c4c;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
+    padding-top: 26px;
+    padding-bottom: 39px;
+}
+
+.ser_col .ser_text .img2 img{
+    padding-left: 70px;
+}
+
+.ser_col2{
+    width: 50%;
+    float: left;
+    /* background: red; */
+    text-align: left;
+}
+
+.ser_col2 img{
+    width: 100%;
+    max-width: 100%;
+    margin-left: -40px;
+}
+
+
+/* ===========================================================
+                        Service part end
+============================================================*/
+
+/* ===========================================================
+                        Ingredient part start
+============================================================*/
+#ingredient{
+    padding: 100px 0;
+    background: url(../images/ingredients-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.ingred_col{
+    width: 570px;
+    float: right;
+    padding: 72px 80px 80px;
+    background: rgba(0, 0, 0, 0.651);
+}
+
+.ingred_text{
+    width: 410px;
+    text-align: center;
+}
+
+.ingred_text h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+}
+
+.ingred_text img{
+    padding-top: 15px;
+}
+
+.ingred_text p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
+    padding-top: 24px;
+    padding-bottom: 70px;
+}
+
+.ingred_img{
+    display: flex;
+    justify-content: center;
+}
+
+.ingred_img .round{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px solid rgba(0, 0, 0, 0.67);
+    position: relative;
+    margin-right: 30px;
+}
+
+.ingred_img .round:last-child{
+    margin-right: 0;
+}
+
+.ingred_img .round img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 100%;
+}
+/* ===========================================================
+                        Ingredient part end
+============================================================*/
+
+/* ===========================================================
+                        Menu part start
+============================================================*/
+#menu_list{
+    padding: 100px 0;
+    background: url(../images/Menu_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.list_col{
+    width: 45%;
+    float: left;
+    text-align: center;
+}
+
+.common_head h2{
+    color: #cc9900;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.list_inner{
+    width: 430px;
+    float: right;
+}
+
+.list_inner{
+    border-bottom: 1px solid #e1d5aa;
+}
+
+.list_inner h5{
+    color: #c89f2d;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+    float: left;
+    padding-top: 22px;
+    padding-bottom: 7px;   
+}
+
+.list_inner span{
+    color: #c89f2d;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+    float: right;
+    padding-top: 22px;
+}
+
+.list_left p{
+    color: #4c4c4c;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    padding-left: 2px;
+    padding-top: 10px;
+}
+
+.list_left{
+    padding-top: 60px;
+}
+
+.list_left:first-child{
+    padding-top: 0;
+}
+
+/* ===========================================================
+                        Menu part end
+============================================================*/
+
+/* ===========================================================
+                        Review part start
+============================================================*/
+#review{
+    padding: 100px 100px;
+    background: url(../images/review_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.review_col{
+    width: 770px;
+    padding: 73px 79px 103px 30px;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 0 auto;
+}
+
+.review_text{
+    width: 670px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.review_text h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+}
+
+.review_text p{
+    color: #dde0df;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Gentium Book Basic', serif;
+    line-height: 45px;
+}
+
+.review_text p span{
+    color: #dde0df;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    display: block;
+}
+/* ===========================================================
+                        Review part end
+============================================================*/
+
+/* ===========================================================
+                        Order part start
+============================================================*/
+#order{
+    padding: 100px 0;
+}
+
+.order_col{
+    width: 50%;
+    float: left;
+    padding-left: 40px;
+}
+
+.order_img img:last-child{
+    padding-left: 30px;
+}
+
+.order_text{
+    width: 430px;
+    float: left;
+    text-align: center;
+    padding-left: 40px;
+}
+
+.order_text_ruls h2{
+    color: #cc9900;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+}
+
+.order_text_ruls p{
+    color: #4c4c4c;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    line-height: 24px;
+}
+
+.order_text_ruls p span{
+    display: block;
+    padding-top: 20px;
+}
+
+.order_text_box{
+    width: 430px;
+    float: left;
+    padding-top: 50px;
+    margin-left: 23px;
+}
+
+.order_text_box .left_box{
+    width: 200px;
+    float: left;
+}
+
+.left_box h4{
+    color: #c9a131;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+.left_box h5{
+    color: #c9a131;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    padding-top: 8px;
+}
+
+.left_box input{
+    text-align: left;
+    margin-top: 10px;
+    margin-right: 53px;
+    padding-left: 5px;
+    padding-bottom: 3px;
+}
+
+.left_box ::placeholder{
+    color: #333;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.order_text_box a{
+    padding: 10px 20px;
+    background: #c9a131;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin: 30px 80px 0 0;
+}
+/* ===========================================================
+                        Order part end
+============================================================*/
+
+/* ===========================================================
+                        Footer part start
+============================================================*/
+#footer{
+    padding: 60px 0 70px;
+    background: #191919;
+}
+
+.footer_1st{
+    width: 410px;
+    float: left;
+    text-align: center;
+    padding-left: 53px;
+}
+
+.footer_2nd{
+    width: 325px;
+    float: left;
+    text-align: center;
+    padding-left: 125px;
+}
+
+.footer_3rd{
+    width: 362px;
+    float: left;
+    text-align: center;
+    padding-left: 160px;
+}
+
+.footer_1st h3,
+.footer_2nd h3,
+.footer_3rd h3{
+    color: #fff;
+    font-size: 21px;
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+    padding-bottom: 25px;
+}
+
+.footer_1st p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    padding-top: 25px;
+}
+
+.footer_1st p span{
+    display: block;
+}
+
+.footer_2nd p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    padding-top: 25px;
+}
+
+.footer_2nd p span{
+    font-weight: 700;
+}
+
+.footer_2nd .cards img{
+    margin-top: 50px;
+}
+
+.footer_3rd p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    padding-top: 20px;
+}
+
+.footer_3rd .icon a i{
+    color: #fff;
+    font-size: 16px;
+    padding-top: 55px;
+    margin-left: 10px;
+}
+/* ===========================================================
+                        Footer part end
+============================================================*/
